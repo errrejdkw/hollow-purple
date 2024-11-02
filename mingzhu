@@ -1,0 +1,8 @@
+local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+local PhantomForcesWindow = Library:NewWindow("明珠的紫色鸡蛋")
+local StartSection = PhantomForcesWindow:NewSection("开始")
+
+-- 仅保留的Purple技能按钮，更名为明珠吃的紫色鸡蛋
+StartSection:CreateButton("明珠吃的紫色鸡蛋", function()
+  game:GetService("ReplicatedStorage").Remotes.Purple:FireServer()
+end)
